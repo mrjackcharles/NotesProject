@@ -1,0 +1,10 @@
+
+version: "3.3"
+services:
+
+    app:
+      image: jackcharles13/tem:latest
+      build: ./app
+      container_name: application
+      ports:
+        - "5000:5000"
