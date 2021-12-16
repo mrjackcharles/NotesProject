@@ -25,6 +25,8 @@ pipeline {
         steps{
           sh 'cd /var/lib/jenkins/keys'
           sh 'ssh -i /var/lib/jenkins/keys/NotesVM_key.pem azureuser@52.146.37.11'
+          sh 'docker pull jackcharles13/tem:latest'
+          sh 'docker-compose up'
                 }
            }     
       }
