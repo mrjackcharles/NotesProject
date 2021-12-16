@@ -23,9 +23,8 @@ pipeline {
            
       stage('ssh into NotesVM') {
         steps{
-          ssh -i "~/.shh/KEY.pem" user@ubuntu << EOF echo "you can do one thing"
-          echo "And another"
-          sudo apt-get updateEOF
+          sh 'chmod 400 NotesVM_key.pem'
+          sh 'ssh -i /var/lib/jenkins/keys/NotesVM_key.pem azureuser@52.146.37.11'
                 }
            }     
       }
