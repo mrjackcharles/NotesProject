@@ -1,5 +1,5 @@
 
-version: "2.2"
+version: "3.8"
 services:
 
     app:
@@ -8,5 +8,5 @@ services:
       container_name: application
       ports:
         - target: 5000
-        published: 80
-        protocol: 5000
+          published: 80
+          protocol: tcp
