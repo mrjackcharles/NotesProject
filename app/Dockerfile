@@ -1,7 +1,7 @@
 #Use Python 3.6 as a base image
 FROM python:3.7
 # Copy contents into image
-WORKDIR /website
+WORKDIR /app
 # Copying files to new directory
 COPY . .
 # install pip dependencies from requirements file
