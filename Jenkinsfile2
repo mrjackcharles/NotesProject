@@ -24,8 +24,9 @@ pipeline {
       stage('ssh into NotesVM') {
         steps{
           sh 'cd /var/lib/jenkins/keys'
-          sh 'ssh -i /var/lib/jenkins/keys/NotesVM_key.pem azureuser@20.106.149.229'
+          sh 'ssh -i /var/lib/jenkins/.ssh/NotesApp_key.pem azureuser@20.90.186.210'
           sh 'docker pull jackcharles13/tem:latest'
+          sh 'exit'
                 }
            }     
       }
