@@ -7,4 +7,6 @@ services:
       build: ./app
       container_name: application
       ports:
-        - "5000:5000"
+        - target: 5000
+        published: 80
+        protocol: 5000
