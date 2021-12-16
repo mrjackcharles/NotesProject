@@ -24,7 +24,6 @@ pipeline {
       stage('ssh into NotesVM') {
         steps{
           sh 'cd /var/lib/jenkins/keys'
-          sh 'chmod 400 NotesVM_key.pem'
           sh 'ssh -i /var/lib/jenkins/keys/NotesVM_key.pem azureuser@52.146.37.11'
                 }
            }     
