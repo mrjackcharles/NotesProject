@@ -31,3 +31,5 @@ For Future:
 - For Jenkins to deploy the updates app automatically (current only gives vm new dockerhub image)
 - Create a Swarm for app on cloud
 - Create database in cloud on seperate vm
+
+------
